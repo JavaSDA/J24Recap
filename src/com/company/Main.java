@@ -39,6 +39,12 @@ public class Main {
     // - Abstract classes
     // - Interfaces
 
+    // Polymorphism is making pieces of your code behave differently.
+    // These behaviours will be based on how the method is called.
+    // There are two main categories of polymorphism:
+    // - overloading (Methods, constructors)
+    // - overriding (Method)
+
 
     public static void main(String[] args) {
 //        int result = fNumber + secondNumber;
@@ -58,9 +64,9 @@ public class Main {
 
         Ball americanFootball = new Ball(false, 30);
 
-        System.out.println("The diameter leather: " + leatherBall.getDiameter());
-        System.out.println("The diameter paper: " + paperBall.getDiameter());
-        System.out.println("The diameter american: " + americanFootball.getDiameter());
+//        System.out.println("The diameter leather: " + leatherBall.getDiameter());
+//        System.out.println("The diameter paper: " + paperBall.getDiameter());
+//        System.out.println("The diameter american: " + americanFootball.getDiameter());
 //        Ball.keepBallRound();
 
 
@@ -68,6 +74,7 @@ public class Main {
         System.out.println(spike.getDiameter());
         spike.bounce(); // TODO: spikes don't bounce
 
+        System.out.println(spike.getNumOfSpikes(4));
     }
 
 }

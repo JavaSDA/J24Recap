@@ -17,4 +17,15 @@ public class Spike extends Ball {
         return numOfSpikes;
     }
 
+    public int getNumOfSpikes(int num) {
+        return num;
+    }
+
+
+    public void bounce() {
+        System.out.println("Spikes don't bounce!");
+    }
+
+
+
 }
