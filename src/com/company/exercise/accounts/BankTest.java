@@ -10,9 +10,9 @@ public class BankTest {
         federalReserve.addAccount(new SavingsAccount(accountA, 4));
         federalReserve.addAccount(new CheckingAccount(accountB));
 
-        System.out.println(federalReserve.getBalance(accountB));
+        federalReserve.getBalance("accountB");
         federalReserve.deposit(accountB, 200);
-        System.out.println(federalReserve.getBalance(accountB));
+        federalReserve.getBalance(accountB);
 
         federalReserve.withdraw(accountA, 50);
 

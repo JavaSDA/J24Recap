@@ -7,5 +7,19 @@ public class AudioTest {
 
         Playable wav = new Wavplayer();
         wav.play();
+
+        // Lambda implementation
+        Playable player = () -> {
+            System.out.println("I am playing music");
+        };
+
+        Playable playing = new Playable() {
+            @Override
+            public void play() {
+
+            }
+        };
+
+        player.play();
     }
 }

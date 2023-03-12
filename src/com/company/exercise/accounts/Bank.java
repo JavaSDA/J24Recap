@@ -15,13 +15,16 @@ public class Bank {
     }
 
     public Account findAccount(String accountNumber) {
+        Account account = null;
         for (int i = 0; i < numOfAccounts; i++) {
             if (accounts[i].getAccountNumber().equals(accountNumber)) {
-                return accounts[i];
+                account = accounts[i];
             }
         }
-
-        return null;
+        if (account == null) {
+            throw new IllegalArgumentException("Account (" + accountNumber + ") was not found");
+        }
+        return account;
     }
 
     public void deposit(String accountNumber, double amount) {
@@ -38,12 +41,15 @@ public class Bank {
         }
     }
 
-    public double getBalance(String accountNumber) {
-        Account account = findAccount(accountNumber);
-        if (account != null) {
-            return account.getBalance();
+    public void getBalance(String accountNumber) {
+        try {
+            Account account = findAccount(accountNumber);
+            if (account != null) {
+                System.out.println(accountNumber + " balance: " + account.getBalance());
+            }
+        } catch (ArrayIndexOutOfBoundsException | IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
-        return 0.0;
     }
 
 }

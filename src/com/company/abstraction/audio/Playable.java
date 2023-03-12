@@ -1,5 +1,6 @@
 package com.company.abstraction.audio;
 
+
 public interface Playable {
 
     // An abstract class is used when you want to share functionality between
@@ -11,4 +12,7 @@ public interface Playable {
 
     void play();
 
+    default int get() {
+        return 0;
+    }
 }

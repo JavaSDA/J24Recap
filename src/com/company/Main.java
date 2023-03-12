@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.abstraction.audio.Playable;
 import com.company.ball.Ball;
 import com.company.ball.Spike;
 
@@ -75,6 +76,26 @@ public class Main {
         spike.bounce(); // TODO: spikes don't bounce
 
         System.out.println(spike.getNumOfSpikes(4));
+
+
+
+        /* Exceptions */
+
+        // If an Exception inherits from RuntimeException class, then it is an unchecked exception
+        // otherwise it is a checked Exception
+
+        int[] nums = new int[5];
+//        int number = nums[5]; // last index should be 4
+
+//        System.out.println(number);
+
+
+        /*Lambda*/
+        Playable player = () -> {
+            System.out.println("I am playing music");
+        };
+
+        player.play();
     }
 
 }
