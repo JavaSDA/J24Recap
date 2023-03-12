@@ -1,0 +1,16 @@
+// 25 mins.
+Create a class called person:
+It should have the following properties:
+- firstName
+- lastName
+- age
+
+Encapsulate the person class such that once an instance of it is created
+it cannot be changed but values can be read from it. i.e read-only
+
+Create another calss called Employee:
+It should have the following properties:
+ - occupation
+ - employeeId
+
+Ensure that the Employee class is a child class to the Person class.
