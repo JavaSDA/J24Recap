@@ -60,3 +60,44 @@ The SavingsAccount should come with the following Extra features
 
  HINT: For deposit(), withdraw() and getBalance() in the Bank class, you can use
  the findAccount method as a helper method
+
+
+
+
+
+// 35 mins
+Create a class called Person with the following properties
+- firstName
+- lastName
+- age
+
+Create a class called Employee as a subclass to the
+Person class with props:
+- occupation
+- salary
+- employeeId
+
+Create a class called Company with the following properties
+- companyName
+- List<Employee> employees
+
+Under the company class, implement the averageSalary()
+method that will return the average salary of the employees
+in a particular instance of a company object.
+
+Bonus: When testing in your main method, you can use the
+scanner to create the employees if you prefer.
+
+// 35 mins
+Write a Java Program that simulates a phonebook
+Your program should utilize a Map object that stores
+the name and phone number of each contact in the phonebook
+
+The program should have the following functionality:
+- Add a new contact to the phonebook by entering the name and phone
+number
+- Retrieve a contact's phone number by entering their name
+- Print all the contacts in the phonebook
+
+Bonus: When testing in your main method, you can use the
+scanner to create the contacts if you prefer.

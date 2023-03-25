@@ -87,3 +87,17 @@ in a particular instance of a company object.
 
 Bonus: When testing in your main method, you can use the
 scanner to create the employees if you prefer.
+
+// 35 mins
+Write a Java Program that simulates a phonebook
+Your program should utilize a Map object that stores
+the name and phone number of each contact in the phonebook
+
+The program should have the following functionality:
+- Add a new contact to the phonebook by entering the name and phone
+number
+- Retrieve a contact's phone number by entering their name
+- Print all the contacts in the phonebook
+
+Bonus: When testing in your main method, you can use the
+scanner to create the contacts if you prefer.
