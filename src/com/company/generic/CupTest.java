@@ -10,6 +10,7 @@ public class CupTest {
 
         cup.drink();
         booleanCup.drink();
+        cup.divide(4, 0);
 
         // Conventional Generic letters
         // T - Type
